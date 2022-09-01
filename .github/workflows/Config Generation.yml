@@ -14,12 +14,12 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/openwrt-gl-ax1800
   REPO_BRANCH: master
-  CONFIG_FILE: ax5.config
+  CONFIG_FILE: ax5-.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: false
-  CONFIG: AX5
+  CONFIG: xiaomi_redmi-ax5-jdcloud
   TZ: Asia/Shanghai
   
 jobs:
