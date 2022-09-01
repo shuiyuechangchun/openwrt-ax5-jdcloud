@@ -114,6 +114,13 @@ jobs:
         rm -rf packages
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
         echo "::set-output name=status::success"
+   
+    - name: Upload config
+      uses: actions/upload-artifact@main
+      if: steps.organize.outputs.status == 'success' && !cancelled()
+      with:
+        name: .config_${{ env.DEVICE_NAME }}${{ env.FILE_DATE }}
+        path: openwrt/bin/config
 
     - name: Upload Firmware Directory
       uses: actions/upload-artifact@main
