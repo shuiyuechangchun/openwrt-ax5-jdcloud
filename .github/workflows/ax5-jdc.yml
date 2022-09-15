@@ -14,7 +14,7 @@ env:
 # REPO_URL: https://github.com/Lienol/openwrt
 # REPO_URL: https://github.com/immortalwrt/immortalwrt
 # REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_URL: https://github.com/coolsnowwolf/openwrt-gl-ax1800
+  REPO_URL: https://github.com/shuiyuechangchun/openwrt-gl-ax1800
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: ax5jdc.config
